@@ -1,0 +1,23 @@
+A Path to Becoming a Professional WordPress Front End Developer :
+
+http://thewebprincess.com/path-professional-wordpress-front-end-developer/
+
+==========================================================================
+
+GREAT MISC for WORDPRESS on Ubuntu :
+
+first step : https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04
+
+*ps : use chmod 666 for change permalinks structure (if needed)
+
+second step : https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-ubuntu-14-04
+
+optional : https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
+
+very optional : https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04
+
+VERY HIGH optional : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-varnish-with-apache-on-ubuntu-12-04--3
+
+AFTER USING VARNISH DON'T FORGET TO CHANGE :
+
+<VirtualHost *:80> INTO <VirtualHost *:8080>

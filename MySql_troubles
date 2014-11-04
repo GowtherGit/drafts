@@ -1,0 +1,40 @@
+Ubuntu 14.04 LTS
+----------------
+
+Re-Install:
+-----------
+for mysql2 error access denied for user ... ;
+for default character encoding ;
+starting mysql database server mysqld fail using command : sudo /etc/init.d/mysql ;
+
+$ sudo apt-get --yes autoremove --purge mysql-server-5.5
+
+$ sudo apt-get --yes autoremove --purge mysql-client-5.5
+
+$ sudo apt-get --yes autoremove --purge mysql-common
+
+$ sudo rm -rf /var/lib/mysql /etc/mysql ~/.mysql
+
+WARNING: above step will delete your existing data! please backup first!!!
+
+$ sudo deluser mysql
+
+$ sudo apt-get autoclean
+
+$ sudo apt-get update && sudo apt-get upgrade
+
+$ sudo apt-get install mysql-server-5.5 mysql-client-5.5
+
+NOTE: when you get 'dpkg: error...' please run step below:
+
+$ sudo dpkg --configure -a
+===================================================================================
+
+Error installing mysql2: Failed to build gem native extension:
+--------------------------------------------------------------
+$ sudo apt-get install libmysqlclient-dev
+
+http://stackoverflow.com/questions/3608287/error-installing-mysql2-failed-to-build-gem-native-extension
+
+http://stackoverflow.com/questions/24009416/i-cant-run-bundle-update-because-of-mysql2-gem
+=======================================================================================================
