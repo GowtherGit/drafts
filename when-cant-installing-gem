@@ -1,0 +1,7 @@
+when-cant-installing-gem:
+
+gem fetch [GEMNAME] -V
+
+then
+
+gem install [GEMNAME]
